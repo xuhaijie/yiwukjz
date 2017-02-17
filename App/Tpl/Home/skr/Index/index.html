@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<!--
+            __     __
+           /  \~~~/  \                                                                       |      金华激石信息技术有限公司      |
+     ,----(     ..    )
+    /      \__     __/
+   /|         (\  |(
+  ^ \   /___\  /\ |
+     |__|   |__|-"
+-->
+<html>
+<head>
+	<include file="Public:head" />
+</head>
+<body>
+<include file="Public:header" />
+<div class="search">
+	<div class="search-nr">
+		<div class="search-left">
+			<p> 热门关键词：   　　交通驾驶员培训中心  　　  交通驾驶员   　　  交通学车  　　    义乌交通学车 </p>
+		</div>
+		<form id="form1" name="form1" method="get" action="__ROOT__/product/sousuo">
+			<input name="key" value="" placeholder="　请输入关键词" class="text">
+			<input type="submit" name="Submit" value="搜索" class="anan" />
+		</form>
+	</div>
+</div>
+<div class="main">
+	<div class="liucheng">
+		<div class="liucheng-dh"></div>
+		<div class="liucheng-nr">
+			<ul>
+				<li ><a class="btn-span-20"><span data-hover="提交报名资料">提交报名资料</span></a></li></li>
+				<li ><a class="btn-span-20"><span data-hover="体验">体验</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="上课理论">上课理论</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="模拟机培训">模拟机培训</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="科目一">科目一</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="科目二">科目二</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="科目三">科目三</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="科目四">科目四</span></a></li>
+				<li ><a class="btn-span-20"><span data-hover="领取驾驶证">领取驾驶证</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="clear2"></div>
+<div class="company">
+	<div class="main">
+		<div class="company-dh"></div>
+		<div class="company-nr">
+			<img src="__ROOT__/__UPLOAD__/{$intro[img]}"/>
+			<p>{$intro['description']|msubstr=0,300,'utf-8',true}</p>
+			<a href="__APP__/company">【了解更多】</a>
+		</div>
+	</div>
+</div>
+<div class="youshi">
+	<div class="main">
+		<ul>
+			<li>
+				<h4 class="btn-span-16">不另收费，快速拿本</h4>
+				<p>遵循一费制的收费体系，不乱收学员一分钱实现培训、考试一条龙服务，让培训、考试一步到位</p>
+			</li>
+			<li>
+				<h4 class="btn-span-16">通过率高</h4>
+				<p>科目齐全：不论是初驾申请，还是增驾申请,都可以找到适合你的课种的教练团队，给您最专业的指导。</p>
+			</li>
+			<li>
+				<h4 class="btn-span-16">学车时间自己做主</h4>
+				<p>可以自由根据自己的时间，预约来校学习，方便快捷，合理学习考试拿本。</p>
+			</li>
+			<li>
+				<h4 class="btn-span-16">车型齐全、方法灵活</h4>
+				<p>学校可培训汽车A1、A2、C1、C2驾照；为方便学员、学校采取灵活的培训方法，设有普通班、周未班、增驾班、夜间班、陪驾班，</p>
+			</li>
+			<li>
+				<h4 class="btn-span-16">性价比高</h4>
+				<p>有专业的练车场地，以学车快、考试快、下证快而著称，而且不存在乱收费的情况，服务态度好，工作仔细</p>
+			</li>
+			<li>
+				<h4 class="btn-span-16">训练场地规范</h4>
+				<p>教学规范14\15\16年再次被评为驾培行业文明先进单位</p>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="jidi">
+	<div class="main">
+		<div class="jidi-dh"></div>
+		<div class="jidi-nr">
+			<div id="demo" style=" width:100%; overflow:hidden;">
+				<table align=left cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td id="demo1" valign=top ><div style="width:2770px; ">
+							<volist name="product" id="vo" offset="0" length="10">
+								<div class="picture">
+									<div class="picture1"> <a href="__APP__/product/{$vo.id}" target="_blank"><img src="__ROOT__/__UPLOAD__/in_{$vo.img}" alt="{$vo.title}" onload="AXImg(this,240,240)"/></a></div>
+									<div class="picture2"> <a href="__APP__/product/{$vo.id}" target="_blank">{$vo.title|mb_substr=0,20,'utf-8'}</a></div></div>
+							</volist></div>
+						</td>
+						<td id="demo2" valign=top></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="poster"></div>
+<div class="news">
+	<div class="news1">
+		<div class="news-dh">新闻资讯<i>/ NEWS</i><a href="news/type/4">更多>></a></div>
+		<div class="news1-nr">
+			<volist name="news" id="vo" offset="0" length="8">
+				<li><a href="__APP__/news/{$vo.id}">
+					<p >{$vo.title}</p>
+				</a> </li>
+			</volist>
+		</div>
+	</div>
+	<div class="honor">
+		<div class="news-dh" style="width: 333px;">荣誉资质<i>/ honor</i><a href="product/type/25">更多>></a></div>
+		<div class="honor-nr">
+			<div id="ddemo1">
+				<div class="img_list">
+					<ul>
+						<volist name="honor" id="vo" offset="0" length="3">
+							<li>
+								<img src="__ROOT__/__UPLOAD__/{$vo.img}"/>
+								<a>{$vo.title}</a>
+							</li>
+						</volist>
+					</ul>
+				</div>
+				<a href="#" id="toLeft" class="link toLeft"></a>
+				<a href="#" id="toRight" class="link toRight"></a>
+			</div>
+		</div>
+	</div>
+	<div class="baoming">
+		<div class="news-dh" style="width: 260px;">成功报名<a href="news/type/28">更多>></a></div>
+		<div class="baoming-nr">
+			<ul>
+				<volist name="question" id="vo" offset="0" length="10">
+					<li>
+						<a href="__APP__/news/{$vo.id}">
+							<span>{$vo.title}</span>,{$vo.description|mb_substr=0,30,'utf-8'}
+						</a>
+					</li>
+				</volist>
+			</ul>
+		</div>
+	</div>
+</div>
+<include file="Public:footer" />
+</body>
+</html>
+
+<script>
+
+	function scroll(){
+		var liH = $("div.baoming-nr ul li:eq(0)").height();
+		$("div.baoming-nr ul").animate({"top":-liH},function(){
+			$("div.baoming-nr ul li:eq(0)").appendTo($("div.baoming-nr ul"));
+			$("div.baoming-nr ul").css({"top":0})
+		})
+	}
+	setInterval(scroll,2000);
+</script>
+
+<script language="javascript">
+	var speed=30;
+	var demo=document.getElementById('demo');
+	var demo1=document.getElementById('demo1');
+	var demo2=document.getElementById('demo2');
+	demo2.innerHTML=demo1.innerHTML;
+	function Marquee(){
+		if(demo2.offsetWidth-demo.scrollLeft<=0)
+		{
+			demo.scrollLeft-=demo1.offsetWidth;
+		}
+		else
+		{demo.scrollLeft++;}
+	}
+	var MyMar=setInterval(Marquee,speed);
+	demo.onmouseover=function(){
+		clearInterval(MyMar)
+	}
+	demo.onmouseout=function(){
+		MyMar=setInterval(Marquee,speed)
+	}
+
+</script>
+
+
+<script type="text/javascript">
+	var index = 0;
+	var timer = 0;
+	var ulist = $('.img_list ul');
+	var blist = $('.btn_list ul');
+	var list = ulist.find('li');
+	var llength = list.length;//li的个数，用来做边缘判断
+	var lwidth = $(list[0]).width();//每个li的长度，ul每次移动的距离
+	var uwidth = llength * lwidth;//ul的总宽度
+
+	function init(){
+		//生成按钮(可以隐藏)
+		addBtn(list);
+		//显示隐藏左右点击开关
+		$('.link').css('display', 'block');
+		$('.link').bind('click', function(event) {
+			var elm = $(event.target);
+			doMove(elm.attr('id'));
+			return false;
+		});
+
+		//初始化描述
+		var text = ulist.find('li').eq(0).find('img').attr('alt');
+		var link = ulist.find('li').eq(0).find('a').attr('href');
+		$('.img_intro .text a').text(text);
+		$('.img_intro .text a').attr('href',link);
+		auto();
+	}
+
+	function auto(){
+		//定时器
+		timer = setInterval("doMove('toRight')",3000);
+
+		$('.img_list li, .btn_list li').hover(function() {
+			clearInterval(timer);
+		}, function() {
+			timer = setInterval("doMove('toRight')",3000);
+		});
+	}
+
+	function changeBtn(i){
+		blist.find('li').eq(i).addClass('on').siblings().removeClass('on');
+		var text = ulist.find('li').eq(i).find('img').attr('alt');
+		var link = ulist.find('li').eq(i).find('a').attr('href');
+		$('.img_intro .text a').text(text);
+		$('.img_intro .text a').attr('href',link);
+	}
+
+	function addBtn (list){
+		for (var i = 0; i < list.length; i++) {
+			var imgsrc = $(list[i]).find('img').attr('src');
+			var listCon = '<li><img src="'+imgsrc+'""></li>';
+			$(listCon).appendTo(blist);
+			//隐藏button中的数字
+			//list.css('text-indent', '10000px');
+		};
+		blist.find('li').first().addClass('on');
+		blist.find('li').click(function(event) {
+			var _index = $(this).index();
+			doMove(_index);
+		});
+	}
+
+	function doMove(direction){
+		//向右按钮
+		if (direction =="toRight") {
+			index++;
+			if ( index< llength) {
+				uwidth = lwidth *index;
+				ulist.css('left',-uwidth);
+				//ulist.animate({left: -uwidth}, 1000);
+
+			}else{
+				ulist.css('left','0px');
+				index = 0;
+			};
+			//向左按钮
+		}else if(direction =="toLeft"){
+			index--;
+			if ( index < 0) {
+				index = llength - 1;
+			}
+			uwidth = lwidth *index;
+			ulist.css('left',-uwidth);
+			//ulist.animate({left: -uwidth}, "slow");
+			//点击数字跳转
+		}else{
+			index = direction;
+			uwidth = lwidth *index;
+			ulist.css('left',-uwidth);
+		};
+		changeBtn(index);
+	}
+	init();
+</script>

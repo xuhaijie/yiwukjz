@@ -1,0 +1,31 @@
+<div class="clear2"></div>
+<div class="footer">
+    <div class="main">
+        <div class="f_nav">
+            <div class="commonWd">
+                <script type="text/javascript">
+                    $(document).ready(function (){
+                        var l=$('#Nav-1 li').length;
+                        var ht="";
+                        for(var i=0;i<l;i++){
+                            if(i<l-1)
+                                ht+=$("#Nav-1 li").eq(i).html()+"　|　";
+                            else
+                                ht+=$("#Nav-1 li").eq(i).html();
+                        }
+                        $('.f_nav').html(ht);
+                    })
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="ff">
+        版权所有：　{$config['web_name']} 　联系人：{$config['linkman']} 　手机：{$config['mobile']}　　<br/>
+        训练场地：{$config['address']}　网页设计：激石信息技术<br>
+        <a href="__APP__/admin" target="_blank">[后台登陆]</a>
+        </a><a href="__ROOT__/Sitemap">　网站地图</a><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261289734'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1261289734%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+</div>
+
+<include file="Public:f_lode"/>
+{$liuliangbao}
